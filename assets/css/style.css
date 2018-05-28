@@ -1,0 +1,430 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+p
+{
+	text-align: justify;
+	font-family: 'Varela Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #fff;
+}
+
+a
+{
+	text-decoration: none;
+	color: white;
+}
+
+.clear:after
+{
+	content: " ";
+	display: block;
+    clear: both;
+}
+
+/*common styles fo all pages*/
+.wrapper
+{
+	min-height: 100%;
+	width: 100%;
+}
+
+.wrapper-padding
+{
+	padding: 5%;
+}
+
+.wrapper-black
+{
+	background-color: rgba(0,0,0,0.4);
+}
+
+.wrapper-green
+{
+	background-color: rgba(44,99,33,0.8);
+}
+
+.wrapper-blue
+{
+	background-color: rgba(4, 20, 242,0.8);
+}
+
+.wrapper-red
+{
+	background-color: rgba(247, 2, 18,0.8);
+}
+
+.wrapper-orange
+{
+	background-color: rgba(247, 142, 4,0.8);
+}
+
+.wrapper-yellow
+{
+	background-color: rgba(255, 229, 0,0.8);
+}
+
+.banner-text
+{
+	font-family: 'Indie Flower', cursive;
+	text-align: center;
+	margin-top: 2vh;
+	color: white;
+}
+
+.footer
+{
+	background-color: gray;
+	min-height: 10vh;
+}
+
+#share-us
+{
+	border: 1px solid white;
+	border-radius: 1%;
+	margin: 0 3%;
+	background-color: #ffa807;
+	padding: 1% 0;
+}
+
+#share-us>div
+{
+	text-align: center;
+	padding: 0;
+	margin: 0.5%;
+}
+
+.btn-share
+{
+	width: 120px;
+}
+
+#contact>div
+{
+	margin-top: 19px;
+}
+
+#contact p
+{
+	font-size: 12px;
+	color: black;
+	line-height: 15px;
+	font-family: sans-serif;
+}
+
+#copyright
+{
+	background-color: rgba(0,0,0,0.7);
+	color: white;
+	text-align: center;
+}
+
+.social-links
+{
+	text-align: center;
+}
+
+/*navbar override-set padding*/
+.navbar
+{
+   padding: 3%;
+}
+
+/*style for index*/
+.banner-index
+{
+  background-image: url(../images/banner-index-bg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  min-height: 100vh;
+}
+
+.banner-index-inner
+{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: white;
+  text-align: center;
+  padding: 0;
+}
+
+.banner-index-inner-pos
+{
+	position: absolute;
+	bottom: 0;
+}
+
+.banner-index-inner-bg1
+{
+	background-image: url(../images/banner-index-inner-bg1.jpeg);
+}
+
+.banner-index-inner i
+{
+	margin-bottom: 20px;
+}
+
+/*style for about*/
+.banner-about
+{
+  background-image: url(../images/banner_home.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  min-height: 82vh;
+}
+
+.about
+{
+	background-color: white;
+}
+
+.about-content
+{
+	padding: 0 5%;
+	margin: 2.2%;
+}
+
+.mission-vision
+{
+	border: 1px solid white;
+	border-radius: 15%;
+	box-shadow: 5px 5px rgba(0,0,0,0.05);
+	background-color: white;
+	padding: 2%;
+	margin: 2%;
+}
+
+.events
+{
+	background-color: skyblue;
+	text-align: center;
+	padding: 2% 2% 10%;
+}
+
+/*style for join*/
+.join
+{
+	padding: 3% 5%;
+}
+
+.join-intro
+{
+	text-align: center;
+	color: white;
+}
+
+.join-box
+{
+	text-align: center;
+	color: white;
+	border: 1px solid white;
+	margin: 2%;
+	padding: 2%;
+	border-radius: 2%;
+	background-color: rgba(134, 249, 142, 0.2); /*light green*/
+}
+
+.join-form
+{
+	text-align: left;
+	padding: 3%;
+	border-radius: 2%;
+	background-color: rgba(217, 252, 146, 0.3) /*yellow-green*/
+}
+
+.btn-join
+{
+	width: 100%;
+}
+
+.testimonial
+{
+	min-height: 50vh;
+	padding: 5%;
+	background-color: blue;
+}
+
+.carousel-item-testimonial
+{
+	min-height: 35vh;
+	background-color: transparent;
+}
+
+.carousel-item-testimonial>div
+{
+	text-align: center;
+	padding: 2% 10%;
+}
+
+.testimonial-avatar
+{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin: 2%;
+
+}
+
+/*style for donate*/
+.donate
+{
+	padding: 5% 5% 10%;
+}
+
+.donate-box
+{
+	text-align: center;
+	color: white;
+	margin: 2%;
+	padding: 2%;
+	border-radius: 2%;
+	background-color: rgba(134, 249, 142, 0.2); /*light green*/
+}
+
+.donate-form
+{
+	text-align: left;
+	padding: 3%;
+	border-radius: 2%;
+	background-color: rgba(217, 252, 146, 0.3) /*yellow-green*/
+}
+
+.donate-intro
+{
+	padding: 2%;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) 
+{
+
+	.banner-index-inner-pos
+	{
+		 position: relative;
+		 top: 100%;
+	}
+
+	#share-us
+	{
+		margin-top: 19px;
+	}
+
+	.about-content
+	{
+		padding: 0;
+		margin: 2% -15px;
+	}
+	.donate-box
+	{
+		margin-left: -31px;
+		margin-right: -31px;
+		border-radius: 0;
+	}
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px)
+{
+	.banner-index-inner-pos
+	{
+		 position: relative;
+		 top: 100%;
+	}
+
+	#share-us
+	{
+		margin-top: 19px;
+	}
+	.donate-box
+	{
+		margin-left: -33px;
+		margin-right: -33px;
+		border-radius: 0;
+	}
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) 
+{
+	#share-us
+	{
+		position: relative;
+		top: -40%;
+	}
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) 
+{
+
+	#share-us
+	{
+		position: relative;
+		top: -40%;
+	}
+
+	#contact-us
+	{
+		border-left: 1px dotted white;
+		border-right: 1px dotted white;
+	}
+
+	.about-content
+	{
+		position: relative;
+		top: -25%;
+	}
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) 
+{
+	#share-us
+	{
+		position: relative;
+		top: -40%;
+	}
+
+	#contact-us
+	{
+		border-left: 1px dotted white;
+		border-right: 1px dotted white;
+	}
+
+	.about-content
+	{
+		position: relative;
+		top: -25%;
+	}
+}
