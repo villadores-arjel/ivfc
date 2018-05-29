@@ -14,10 +14,9 @@ p
     line-height: 24px;
     font-size: 16px;
     letter-spacing: 0px;
-    color: #fff;
 }
 
-h2, h3, h4, h5, h6
+h1, h2, h3, h4, h5, h6
 {
 	font-family: 'Varela Round', sans-serif;
 }
@@ -25,7 +24,7 @@ h2, h3, h4, h5, h6
 a
 {
 	text-decoration: none;
-	color: white;
+	color: #fff; /*white*/
 }
 
 .clear:after
@@ -42,6 +41,11 @@ a
 	width: 100%;
 }
 
+.wrapper-bg
+{
+	margin: 15px;
+}
+
 .wrapper-padding
 {
 	padding: 5%;
@@ -54,49 +58,49 @@ a
 
 .wrapper-green
 {
-	background-color: rgba(44,99,33,0.8);
+	background-color: rgba(147, 216, 206,0.8);
 }
 
 .wrapper-blue
 {
-	background-color: rgba(4, 20, 242,0.8);
+	background-color: rgba(156,180,220,0.8);
 }
 
 .wrapper-red
 {
-	background-color: rgba(247, 2, 18,0.8);
+	background-color: rgba(247,2,18,0.8);
 }
 
 .wrapper-orange
 {
-	background-color: rgba(247, 142, 4,0.8);
+	background-color: rgba(94,61,38,0.8);
 }
 
 .wrapper-yellow
 {
-	background-color: rgba(255, 229, 0,0.8);
+	background-color: rgba(94,74,38,0.8);
 }
 
 .banner-text
 {
-	font-family: 'Indie Flower', cursive;
 	text-align: center;
 	margin-top: 2vh;
-	color: white;
+	color: #fff;
 }
 
 .footer
 {
-	background-color: gray;
+	background-color: rgb(128, 128, 128); /*gray*/
 	min-height: 10vh;
 }
 
 #share-us
 {
-	border: 1px solid white;
+	/*border: 1px solid white;*/
 	border-radius: 1%;
-	margin: 0 3%;
-	background-color: #ffa807;
+	margin: 0 3%; 
+	/*background-color: #ffa807;*/ /*orange*/
+	background-color: rgba(179, 206, 202, 0.7);
 	padding: 1% 0;
 }
 
@@ -120,7 +124,6 @@ a
 #contact p
 {
 	font-size: 12px;
-	color: black;
 	line-height: 17px;
 	font-family: sans-serif;
 }
@@ -132,8 +135,8 @@ a
 
 #copyright
 {
-	background-color: rgba(0,0,0,0.7);
-	color: white;
+	background-color: rgba(0,0,0,0.7); /*black with opacity 0.7*/
+	color: #fff;
 	text-align: center;
 }
 
@@ -164,7 +167,7 @@ a
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  color: white;
+  color: rgb(48, 56, 55); /*dark-gray*/
   text-align: center;
   padding: 0;
 }
@@ -180,6 +183,21 @@ a
 	background-image: url(../images/banner-index-inner-bg1.jpeg);
 }
 
+.banner-index-inner-bg2
+{
+	background-image: url(../images/banner-index-inner-bg2.jpg);
+}
+
+.banner-index-inner-bg3
+{
+	background-image: url(../images/banner-index-inner-bg3.jpeg);
+}
+
+.banner-index-inner-bg4
+{
+	background-image: url(../images/banner-index-inner-bg4.jpg);
+}
+
 .banner-index-inner i
 {
 	margin-bottom: 20px;
@@ -188,7 +206,7 @@ a
 /*style for about*/
 .banner-about
 {
-  background-image: url(../images/banner_home.jpeg);
+  background-image: url(../images/banner_about.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -198,7 +216,7 @@ a
 
 .about
 {
-	background-color: white;
+	background-color: #fff;
 }
 
 .about-content
@@ -212,19 +230,40 @@ a
 	border: 1px solid white;
 	border-radius: 15%;
 	box-shadow: 5px 5px rgba(0,0,0,0.05);
-	background-color: white;
+	background-color: #fff;
 	padding: 2%;
 	margin: 2%;
 }
 
-.events
+.gallery
 {
-	background-color: skyblue;
+	background-color: rgb(147, 216, 206); /*--------------------------Change Color----------------------------*/
 	text-align: center;
-	padding: 2% 2% 10%;
+	padding: 2% 0 6%;
+}
+
+.carousel-item-gallery
+{
+	min-height: 35vh;
+}
+
+.gallery-img
+{
+	min-height: 15vh;
+	max-height: 35vh;
 }
 
 /*style for join*/
+.bg-join
+{
+  background-image: url(../images/bg_join.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  padding: 0;
+}
+
 .join
 {
 	padding: 3% 5%;
@@ -233,14 +272,14 @@ a
 .join-intro
 {
 	text-align: center;
-	color: white;
+	color: #fff;
 }
 
 .join-box
 {
 	text-align: center;
-	color: white;
-	border: 1px solid white;
+	color: #fff;
+	border: 1px solid #fff;
 	margin: 2%;
 	padding: 2%;
 	border-radius: 2%;
@@ -252,7 +291,7 @@ a
 	text-align: left;
 	padding: 3%;
 	border-radius: 2%;
-	background-color: rgba(217, 252, 146, 0.3) /*yellow-green*/
+	background-color: rgba(217, 252, 146, 0.3); /*yellow-green*/
 }
 
 .btn-join
@@ -264,7 +303,8 @@ a
 {
 	min-height: 50vh;
 	padding: 5%;
-	background-color: blue;
+	text-align: center;
+	/*background-color: blue;*/ /*--------------------------Change Color----------------------------*/
 }
 
 .carousel-item-testimonial
@@ -288,20 +328,59 @@ a
 
 }
 
+/*style for events*/
+.events
+{
+	min-height: 50vh;
+	padding: 5% 2%;
+	background-color: rgb(222, 234, 222); /*moss green*/
+}
+
+.feature-event
+{
+	border: 1px solid;
+	border-radius: 3%;
+	background-color: rgb(137, 140, 137);
+	padding: 2% 2%;
+}
+
+.event
+{
+	margin: 2% 0;
+	text-align: center;
+}
+
+.event-article
+{
+
+}
+
+.event-pic
+{
+	width: 40%;
+	height: 35%;
+}
+
+.btn-read-more
+{
+
+}
+
+
 /*style for donate*/
 .donate
 {
-	padding: 5% 5% 10%;
+	padding: 5%;
+	background-color: rgb(137, 140, 137); /*light-gray*/
 }
 
 .donate-box
 {
 	text-align: center;
-	color: white;
 	margin: 2%;
 	padding: 2%;
 	border-radius: 2%;
-	background-color: rgba(134, 249, 142, 0.2); /*light green*/
+	background-color: rgba(222, 234, 222, 0.5); /*moss green*/
 }
 
 .donate-form
@@ -309,7 +388,7 @@ a
 	text-align: left;
 	padding: 3%;
 	border-radius: 2%;
-	background-color: rgba(217, 252, 146, 0.3) /*yellow-green*/
+	background-color: rgba(194, 232, 1946, 0.3); /*dark-green*/
 }
 
 .donate-intro
@@ -318,17 +397,10 @@ a
 	text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+.donate-intro div[class*=col]
+{
+	padding: 0;
+}
 
 
 
@@ -355,6 +427,7 @@ a
 		padding: 0;
 		margin: 2% -15px;
 	}
+
 	.donate-box
 	{
 		margin-left: -31px;
