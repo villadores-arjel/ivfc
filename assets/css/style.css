@@ -56,6 +56,11 @@ a
 	background-color: rgba(0,0,0,0.4);
 }
 
+.wrapper-light
+{
+	background-color: rgba(0,0,0,0.1);
+}
+
 .wrapper-green
 {
 	background-color: rgba(147, 216, 206,0.8);
@@ -84,23 +89,20 @@ a
 .banner-text
 {
 	text-align: center;
-	margin-top: 2vh;
-	color: #fff;
+	color: rgb(216, 189, 166);
 }
 
 .footer
 {
-	background-color: rgb(128, 128, 128); /*gray*/
-	min-height: 10vh;
+	background-color: rgb(208, 224, 212);
+	/*min-height: 10vh;*/
 }
 
 #share-us
 {
-	/*border: 1px solid white;*/
 	border-radius: 1%;
 	margin: 0 3%; 
-	/*background-color: #ffa807;*/ /*orange*/
-	background-color: rgba(179, 206, 202, 0.7);
+	background-color: rgb(101, 145, 113);
 	padding: 1% 0;
 }
 
@@ -135,7 +137,7 @@ a
 
 #copyright
 {
-	background-color: rgba(0,0,0,0.7); /*black with opacity 0.7*/
+	background-color: rgb(41, 76, 50);
 	color: #fff;
 	text-align: center;
 }
@@ -145,10 +147,31 @@ a
 	text-align: center;
 }
 
+.form-control
+{
+	background-color: rgb(208, 224, 212);
+}
+
 /*navbar override-set padding*/
 .navbar
 {
    padding: 3%;
+}
+
+.navbar h1
+{
+	color: rgb(216, 189, 166);
+}
+
+.navbar>div>ul>li>a
+{
+	color: rgb(216, 189, 166);
+	font-size: 18px;
+}
+
+.navbar-dark
+{
+	color: rgb(216, 189, 166);
 }
 
 /*style for index*/
@@ -216,7 +239,7 @@ a
 
 .about
 {
-	background-color: #fff;
+	background-color: rgb(140, 173, 149);
 }
 
 .about-content
@@ -227,17 +250,18 @@ a
 
 .mission-vision
 {
-	border: 1px solid white;
+	border: 1px solid rgb(62, 96, 71);
 	border-radius: 15%;
-	box-shadow: 5px 5px rgba(0,0,0,0.05);
-	background-color: #fff;
+	box-shadow: 5px 5px rgba(62, 96, 71.05);
+	background-color: rgb(62, 96, 71);
+	color: rgb(187, 193, 190);
 	padding: 2%;
 	margin: 2%;
 }
 
 .gallery
 {
-	background-color: rgb(147, 216, 206); /*--------------------------Change Color----------------------------*/
+	background-color: rgb(53, 79, 60);
 	text-align: center;
 	padding: 2% 0 6%;
 }
@@ -272,7 +296,7 @@ a
 .join-intro
 {
 	text-align: center;
-	color: #fff;
+	color: rgb(239, 249, 227);
 }
 
 .join-box
@@ -283,7 +307,7 @@ a
 	margin: 2%;
 	padding: 2%;
 	border-radius: 2%;
-	background-color: rgba(134, 249, 142, 0.2); /*light green*/
+	background-color: rgba(134, 249, 142, 0.2);
 }
 
 .join-form
@@ -291,7 +315,7 @@ a
 	text-align: left;
 	padding: 3%;
 	border-radius: 2%;
-	background-color: rgba(217, 252, 146, 0.3); /*yellow-green*/
+	background-color: rgba(217, 252, 146, 0.3);
 }
 
 .btn-join
@@ -304,7 +328,7 @@ a
 	min-height: 50vh;
 	padding: 5%;
 	text-align: center;
-	/*background-color: blue;*/ /*--------------------------Change Color----------------------------*/
+	color: rgb(239, 249, 227);
 }
 
 .carousel-item-testimonial
@@ -333,14 +357,14 @@ a
 {
 	min-height: 50vh;
 	padding: 5% 2%;
-	background-color: rgb(222, 234, 222); /*moss green*/
+	background-color: rgb(140, 173, 149);
 }
 
 .feature-event
 {
-	border: 1px solid;
-	border-radius: 3%;
-	background-color: rgb(137, 140, 137);
+	/*border: 1px solid rgb(89, 137, 89);*/
+	border-radius: 50px;
+	background-color: rgb(101, 145, 113);;
 	padding: 2% 2%;
 }
 
@@ -352,7 +376,7 @@ a
 
 .event-article
 {
-
+	color: rgb(64, 66, 64);
 }
 
 .event-pic
@@ -371,7 +395,8 @@ a
 .donate
 {
 	padding: 5%;
-	background-color: rgb(137, 140, 137); /*light-gray*/
+	background-color: rgb(140, 173, 149);
+	color: rgb(64, 66, 64);
 }
 
 .donate-box
@@ -380,7 +405,7 @@ a
 	margin: 2%;
 	padding: 2%;
 	border-radius: 2%;
-	background-color: rgba(222, 234, 222, 0.5); /*moss green*/
+	background-color: rgb(109, 150, 109);
 }
 
 .donate-form
@@ -388,7 +413,7 @@ a
 	text-align: left;
 	padding: 3%;
 	border-radius: 2%;
-	background-color: rgba(194, 232, 1946, 0.3); /*dark-green*/
+	background-color: rgba(217, 252, 146, 0.3);
 }
 
 .donate-intro
