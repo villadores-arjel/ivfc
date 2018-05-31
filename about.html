@@ -20,52 +20,57 @@
 		<main class="container-fluid">
 			<header class="row banner-about">
 				<div class="wrapper wrapper-black">
-					<nav class="navbar navbar-expand-lg bg-transparent" >
+					<nav class="navbar navbar-expand-lg navbar-dark bg-transparent" >
 						<button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target=#menuNav>
 							<span class="navbar-toggler-icon"></span>
 						</button>
 
-						<a class="navbar-brand" href="index.html"><h1>iVFC</h1></a>
+						<a class="navbar-brand" href="index.html"><h1 class="text-theme-color2">iVFC</h1></a>
 
 						<div class="collapse navbar-collapse" id="menuNav">
 							<ul class="navbar-nav justify-content-center d-flex flex-fill">
 								<li class="nav-item mr-5">
-									<a class="nav-link" href="index.html">HOME</a>
+									<a class="nav-link text-theme-color2" href="index.html">HOME</a>
 								</li>
 								<li class="nav-item mr-5">
-									<a class="nav-link" href="about.html">ABOUT</a>
+									<a class="nav-link text-theme-color2" href="about.html">ABOUT</a>
 								</li>
 								<li class="nav-item mr-5">
-									<a class="nav-link" href="join.html">JOIN US</a>
+									<a class="nav-link text-theme-color2" href="join.html">JOIN US</a>
 								</li>
 								<li class="nav-item mr-5">
-									<a class="nav-link" href="events.html">EVENTS</a>
+									<a class="nav-link text-theme-color2" href="events.html">EVENTS</a>
 								</li>
 								<li class="nav-item mr-5">
-									<a class="nav-link" href="donate.html">DONATE</a>
+									<a class="nav-link text-theme-color2" href="donate.html">DONATE</a>
 								</li>
 								<li class="nav-item mr-5">
-									<a class="nav-link" href="#footer">CONTACT US</a>
+									<a class="nav-link text-theme-color2" href="#footer">CONTACT US</a>
 								</li>
 							</ul>
 						</div>
 					</nav>
 
-				  	<div class="banner-text col-md-12 bg-transparent d-flex flex-column justify-content-center align-items-center">
-				  		<h2 class="display-4">We Teach...We Feed...</h2>
-				  		<h2 class="display-4">We Make them happy</h2>
+				  	<div class="banner-text col-md-12 bg-transparent">
+				  		<h2 class="text-theme-color2 display-md-4">We Teach...We Feed...</h2>
+				  		<h2 class="text-theme-color2 display-md-4">We Make them happy</h2>
 				  	</div>
 				</div> <!-- wrapper for image background -->
 			</header> <!-- end banner -->
 
-			<section class="row about">
-				<div class="col-lg-12">
-					<div class="row about-content">
-						<div class="col-lg-4">
-							<div class="row  mission-vision">
-								<div class="col-lg-3"><i class="fas fa-rocket fa-3x"></i></div>
+			<section class="row bg-theme-color text-theme-color2">
+				<article class="col-lg-12">
+					<div class="row about-content d-flex justify-content-center">
+						<div class="col-lg-6">
+							<div class="row">
 								<div class="col-lg-9">
-									<h3>Mission</h3>
+									<h3><i class="fas fa-book-open fa-2x"></i> Our Story</h3>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat.
+									</p>
 									<p>
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -75,25 +80,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4">
-							<div class="row  mission-vision">
-								<div class="col-lg-3"><i class="fas fa-eye fa-3x"></i></div>
+						<div class="col-lg-6">
+							<div class="row">
 								<div class="col-lg-9">
-									<h3>Vision</h3>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-										consequat.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="row  mission-vision">
-								<div class="col-lg-3"><i class="far fa-clock fa-3x"></i></i></div>
-								<div class="col-lg-9">
-									<h3>Established</h3>
+									<h3>The Founder</h3>
+									<img class="testimonial-avatar" src="http://placehold.jp/40x10.png" alt="founder" />
 									<p>
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -104,18 +95,18 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</article>
 			</section> <!-- end about -->
 
-			<section class="row gallery">
+			<section class="row gallery text-theme-color2">
 				<div class="col-md-12">
 					<span id="gallery-header"><h3>See how happy the children are</h3></span>
 				</div>
-				<div id="carousel-gallery-control" class="col-md-12 carousel slide" data-interval="false" data-ride="carousel">
+				<figure id="carousel-gallery-control" class="col-md-12 carousel slide" data-interval="false" data-ride="carousel">
 					<div class="carousel-inner">
 					    <div class="carousel-item active carousel-item-gallery">
 					      	<!--trigger modal -->	
-							<img class="d-flex w-100 gallery-img" data-toggle="modal" data-target="#img-1" src="https://picsum.photos/100/200/" alt="First slide" />
+							<img class="d-flex w-100 gallery-img" data-toggle="modal" data-target="#img-1" src="https://picsum.photos/200/100/" alt="First slide" />
 					      	<div class="carousel-caption d-none d-md-block">
 						    	<p>
 						    		1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -149,14 +140,14 @@
 				    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				    	<span class="sr-only">Next</span>
 				  	</a>
-				</div> <!-- end carousel -->
+				</figure> <!-- end carousel -->
 
 	
 				<!-- Modal -->
 				<div class="modal fade" id="img-1" tabindex="-1" role="dialog">
 				  <div class="modal-dialog modal-dialog-centered" role="document">
 				    <div class="modal-content">
-				       <img class="d-flex w-100" src="https://picsum.photos/100/200/" alt="First slide" />
+				       <img class="d-flex w-100" src="https://picsum.photos/200/100/" alt="First slide" />
 				    </div>
 				  </div>
 				</div>
@@ -181,7 +172,7 @@
 
 			<footer id="footer" class="footer row">
 				<div class="col-md-12">
-					<div id="share-us" class="row">
+					<div id="share-us" class="row text-theme-color3">
 						<div class="col-md-3">
 							<h4>Share us on</h4>
 						</div>
@@ -192,20 +183,20 @@
 						</div>
 
 						<div class="col-md-2">
+							<button type="button" class="btn-share btn btn-danger">
+								<a  href="https://www.instagram.com/?hl=en" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+							</button>
+						</div>
+
+						<div class="col-md-2">
 							<button type="button" class="btn-share btn btn-info">
 								<a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
 							</button>
 						</div>
 
 						<div class="col-md-2">
-							<button type="button" class="btn-share btn btn-secondary">
-								<a  href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest"></i> Pinterest</a>
-							</button>
-						</div>
-
-						<div class="col-md-2">
 							<button type="button" class="btn-share btn btn-danger">
-								<a  href="https://www.instagram.com/?hl=en" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+								<a  href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest"></i> Pinterest</a>
 							</button>
 						</div>
 					</div>
@@ -230,11 +221,11 @@
 								consequat.
 							</p>
 							<div class="social-links">
-								<a href="https://www.facebook.com/ivfc.philippines/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-								<a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
-								<a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest"></i></a>
-								<a  href="https://vimeo.com/" target="_blank"><i class="fab fa-vimeo-v"></i></a>
-								<a  href="https://www.instagram.com/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+								<a href="https://www.facebook.com/ivfc.philippines/" target="_blank"><i class="fab fa-facebook-square text-primary"></i></a>
+								<a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter  text-info"></i></a>
+								<a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest text-danger"></i></a>
+								<a  href="https://vimeo.com/" target="_blank"><i class="fab fa-vimeo-v  text-info"></i></a>
+								<a  href="https://www.instagram.com/?hl=en" target="_blank"><i class="fab fa-instagram text-danger"></i></a>
 							</div>
 							
 						</div>
@@ -250,7 +241,7 @@
 								<input id="subscriber-email" type="email" class="form-control" placeholder="Enter your email" />
 								  <div class="input-group-append">
 								    <span class="input-group-text" id="basic-addon2">
-								    	<button type="button" class="btn btn-light">Submit</button>
+								    	<button type="button" class="btn btn-primary btn-theme">Submit</button>
 								    </span>
 								  </div>
 							</div>

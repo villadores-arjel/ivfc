@@ -41,11 +41,6 @@ a
 	width: 100%;
 }
 
-.wrapper-bg
-{
-	margin: 15px;
-}
-
 .wrapper-padding
 {
 	padding: 5%;
@@ -61,41 +56,55 @@ a
 	background-color: rgba(0,0,0,0.1);
 }
 
-.wrapper-green
+.wrapper-green-dark
 {
-	background-color: rgba(147, 216, 206,0.8);
+	background-color: rgba(36, 66, 43,0.8);
 }
 
-.wrapper-blue
+.wrapper-green-light
 {
-	background-color: rgba(156,180,220,0.8);
+	background-color: rgba(85, 109, 90,0.8);
 }
 
-.wrapper-red
+.bg-theme-color
 {
-	background-color: rgba(247,2,18,0.8);
+	background-color: rgb(140, 173, 149);
 }
 
-.wrapper-orange
+.bg-line-color
 {
-	background-color: rgba(94,61,38,0.8);
+	background-color: rgb(239, 249, 227);
 }
 
-.wrapper-yellow
+.text-theme-color
 {
-	background-color: rgba(94,74,38,0.8);
+	color: rgb(216, 189, 166) !important; /*pinkish*/
+}
+
+.text-theme-color2
+{
+	color: rgb(239, 249, 227) !important; /*greenish*/
+}
+
+.text-theme-color3
+{
+	color: rgb(64, 66, 64) !important; /*dark*/
+}
+
+.text-theme-color4
+{
+	color: rgb(187, 193, 190) !important; /*bluish*/
 }
 
 .banner-text
 {
 	text-align: center;
-	color: rgb(216, 189, 166);
+	margin-top: 100px;
 }
 
 .footer
 {
 	background-color: rgb(208, 224, 212);
-	/*min-height: 10vh;*/
 }
 
 #share-us
@@ -147,31 +156,51 @@ a
 	text-align: center;
 }
 
+/*form-control override-set background*/
 .form-control
 {
 	background-color: rgb(208, 224, 212);
 }
 
-/*navbar override-set padding*/
+.form-control:focus
+{
+	border-color: #75f4b0;
+	box-shadow: 0 0 0 0.2rem rgba(41, 76, 50, 0.25);
+}
+
+.footer .input-group-text
+{
+	background-color: rgb(208, 224, 212);
+}
+
+.form-control:focus
+{
+	border-color: #75f4b0;
+	box-shadow: 0 0 0 0.2rem rgba(41, 76, 50, 0.25);
+}
+
+/*navbar override*/
 .navbar
 {
    padding: 3%;
 }
 
-.navbar h1
+.navbar-dark .navbar-nav .nav-link
 {
-	color: rgb(216, 189, 166);
-}
-
-.navbar>div>ul>li>a
-{
-	color: rgb(216, 189, 166);
 	font-size: 18px;
 }
 
-.navbar-dark
+/*override btn-primary color*/
+.btn-theme
 {
-	color: rgb(216, 189, 166);
+	background-color: rgb(35, 66, 43) !important;
+	border-color: rgb(101, 145, 113) !important;
+}
+
+.btn-theme:hover
+{
+	background-color: rgb(44, 86, 55) !important;
+	border-color: rgb(101, 145, 113) !important;
 }
 
 /*style for index*/
@@ -185,85 +214,41 @@ a
   min-height: 100vh;
 }
 
-.banner-index-inner
+.mission-vision
 {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  color: rgb(48, 56, 55); /*dark-gray*/
-  text-align: center;
-  padding: 0;
+	text-align: center;
+  	padding: 0;
 }
 
-.banner-index-inner-pos
+.mission-vision-pos
 {
 	position: absolute;
 	bottom: 0;
 }
 
-.banner-index-inner-bg1
-{
-	background-image: url(../images/banner-index-inner-bg1.jpeg);
-}
-
-.banner-index-inner-bg2
-{
-	background-image: url(../images/banner-index-inner-bg2.jpg);
-}
-
-.banner-index-inner-bg3
-{
-	background-image: url(../images/banner-index-inner-bg3.jpeg);
-}
-
-.banner-index-inner-bg4
-{
-	background-image: url(../images/banner-index-inner-bg4.jpg);
-}
-
-.banner-index-inner i
-{
-	margin-bottom: 20px;
-}
-
 /*style for about*/
 .banner-about
 {
-  background-image: url(../images/banner_about.jpeg);
+  background-image: url(../images/banner-about.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
-  min-height: 82vh;
-}
-
-.about
-{
-	background-color: rgb(140, 173, 149);
+  min-height: 650px;
 }
 
 .about-content
 {
 	padding: 0 5%;
 	margin: 2.2%;
-}
-
-.mission-vision
-{
-	border: 1px solid rgb(62, 96, 71);
-	border-radius: 15%;
-	box-shadow: 5px 5px rgba(62, 96, 71.05);
-	background-color: rgb(62, 96, 71);
-	color: rgb(187, 193, 190);
-	padding: 2%;
-	margin: 2%;
+	text-align: center;
 }
 
 .gallery
 {
 	background-color: rgb(53, 79, 60);
 	text-align: center;
-	padding: 2% 0 6%;
+	padding: 2% 0 6%;.
 }
 
 .carousel-item-gallery
@@ -280,7 +265,7 @@ a
 /*style for join*/
 .bg-join
 {
-  background-image: url(../images/bg_join.jpeg);
+  background-image: url(../images/bg-join.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -296,13 +281,11 @@ a
 .join-intro
 {
 	text-align: center;
-	color: rgb(239, 249, 227);
 }
 
 .join-box
 {
 	text-align: center;
-	color: #fff;
 	border: 1px solid #fff;
 	margin: 2%;
 	padding: 2%;
@@ -318,7 +301,7 @@ a
 	background-color: rgba(217, 252, 146, 0.3);
 }
 
-.btn-join
+.btn-theme-size
 {
 	width: 100%;
 }
@@ -328,7 +311,6 @@ a
 	min-height: 50vh;
 	padding: 5%;
 	text-align: center;
-	color: rgb(239, 249, 227);
 }
 
 .carousel-item-testimonial
@@ -353,16 +335,30 @@ a
 }
 
 /*style for events*/
+.banner-event
+{
+  background-image: url(../images/banner-event.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  min-height: 650px;
+}
+
 .events
 {
-	min-height: 50vh;
 	padding: 5% 2%;
-	background-color: rgb(140, 173, 149);
+	position: relative;
+	top: -200px;
+}
+
+.events-container
+{
+	margin-bottom: -200px;
 }
 
 .feature-event
 {
-	/*border: 1px solid rgb(89, 137, 89);*/
 	border-radius: 50px;
 	background-color: rgb(101, 145, 113);;
 	padding: 2% 2%;
@@ -374,29 +370,27 @@ a
 	text-align: center;
 }
 
-.event-article
-{
-	color: rgb(64, 66, 64);
-}
-
 .event-pic
 {
 	width: 40%;
 	height: 35%;
 }
 
-.btn-read-more
-{
-
-}
-
 
 /*style for donate*/
+.bg-donate
+{
+  background-image: url(../images/bg-donate.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  padding: 0;
+}
+
 .donate
 {
 	padding: 5%;
-	background-color: rgb(140, 173, 149);
-	color: rgb(64, 66, 64);
 }
 
 .donate-box
@@ -405,7 +399,7 @@ a
 	margin: 2%;
 	padding: 2%;
 	border-radius: 2%;
-	background-color: rgb(109, 150, 109);
+	background-color: rgba(134, 249, 142, 0.2);
 }
 
 .donate-form
@@ -432,11 +426,21 @@ a
 
 
 /*media queries*/
+@media (min-width: 768px) and (max-height: 800px)
+{
+	.mission-vision-pos
+	{
+		 position: relative;
+		 top: 100%;
+	}
+}
+
+
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) 
 {
 
-	.banner-index-inner-pos
+	.mission-vision-pos
 	{
 		 position: relative;
 		 top: 100%;
@@ -464,7 +468,7 @@ a
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px)
 {
-	.banner-index-inner-pos
+	.mission-vision-pos
 	{
 		 position: relative;
 		 top: 100%;
@@ -490,6 +494,13 @@ a
 		position: relative;
 		top: -40%;
 	}
+
+	.display-md-4
+	{
+		font-size: 2.5rem;
+		font-weight: 300;
+		line-height: 1.2;
+	}
 }
 
 /*Large devices (desktops, 992px and up)*/
@@ -507,11 +518,17 @@ a
 		border-left: 1px dotted white;
 		border-right: 1px dotted white;
 	}
-
-	.about-content
+	.gallery-img
 	{
-		position: relative;
-		top: -25%;
+		min-height: 25vh;
+		max-height: 50vh;
+	}
+
+	.display-md-4
+	{
+		font-size: 4.5rem;
+		font-weight: 300;
+		line-height: 1.2;
 	}
 }
 
@@ -529,10 +546,16 @@ a
 		border-left: 1px dotted white;
 		border-right: 1px dotted white;
 	}
-
-	.about-content
+	.gallery-img
 	{
-		position: relative;
-		top: -25%;
+		min-height: 25vh;
+		max-height: 50vh;
+	}
+
+	.display-md-4
+	{
+		font-size: 4.5rem;
+		font-weight: 300;
+		line-height: 1.2;
 	}
 }
