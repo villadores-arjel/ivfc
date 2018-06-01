@@ -9,23 +9,25 @@
 		<link rel="stylesheet" type="text/css" href="assets/bootstrap-4.1.1-dist/css/bootstrap.min.css">
 		<!-- external css -->
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<!-- animated css -->
+		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 		<!-- font awesome -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 		<!-- google fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round" rel="stylesheet">
 		<!-- favicon -->
-		<link rel="icon" type="image/gif/png" href="fab_icon_sample.png">
+		<link rel="icon" type="image/gif/png" href="fab_icon.png">
 	</head>
 	<body>
 		<main class="container-fluid">
 			<header class="row banner-event">
 				<div class="wrapper wrapper-light">
-					<nav class="navbar navbar-expand-lg navbar-dark bg-transparent" >
+					<nav class="navbar navbar-expand-lg navbar-dark fixed-nav bg-theme-nav" >
 						<button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target=#menuNav>
 							<span class="navbar-toggler-icon"></span>
 						</button>
 
-						<a class="navbar-brand" href="index.html"><h1 class="text-theme-color2">iVFC</h1></a>
+						<a class="navbar-brand" href="index.html"><h1 class="text-theme-color2 logo">iVFC</h1></a>
 
 						<div class="collapse navbar-collapse" id="menuNav">
 							<ul class="navbar-nav justify-content-center d-flex flex-fill">
@@ -33,7 +35,7 @@
 									<a class="nav-link text-theme-color2" href="index.html">HOME</a>
 								</li>
 								<li class="nav-item mr-5">
-									<a class="nav-link text-theme-color2" href="about.html">ABOUT</a>
+									<a class="nav-link text-theme-color2" href="about.html">ABOUT US</a>
 								</li>
 								<li class="nav-item mr-5">
 									<a class="nav-link text-theme-color2" href="join.html">JOIN US</a>
@@ -45,15 +47,15 @@
 									<a class="nav-link text-theme-color2" href="donate.html">DONATE</a>
 								</li>
 								<li class="nav-item mr-5">
-									<a class="nav-link text-theme-color2" href="#footer">CONTACT US</a>
+									<a class="nav-link text-theme-color2" href="#-footer">CONTACT US</a>
 								</li>
 							</ul>
 						</div>
 					</nav>
 
 					<div class="banner-text col-md-12 bg-transparent">
-				  		<h2 class="text-theme-color2 display-md-4">Come and Participate</h2>
-				  		<h4 class="text-theme-color2">lets teach them to become our future leaders</h4>
+				  		<h2 class="text-theme-color2 display-md-4 animated fadeInUp">Come and Participate</h2>
+				  		<h4 class="text-theme-color2 animated fadeInDown">lets teach them to become our future leaders</h4>
 				  	</div>
 
 				</div> <!-- wrapper for image background -->
@@ -65,12 +67,12 @@
 						<article class="col-md-12 event feature-event">
 							<section class="row d-flex justify-content-center">
 								<figure class="col-md-4 align-items-center justify-content-center d-none d-md-flex">
-									<img class="event-pic" src="http://placehold.jp/90x40.png" alt="feature-event" />
+									<img class="w-100" src="assets/images/events-images/event1.jpg" alt="lakbay-aral-poster" />
 								</figure>
 								<section class="col-md-6 text-theme-color2">
-									<h3>Feature Event</h3>
-									<h4>Event Title</h4>
-									<h6><i class="far fa-clock"></i> Date</h6>
+									<h3 class="text-theme-color3">Feature Event</h3>
+									<h4>Lakbay Aral</h4>
+									<h6><i class="far fa-clock"></i> August 19, 2017</h6>
 									<p>
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -84,14 +86,14 @@
 							</section>
 						</article>
 
-						<article class="col-md-12 event">
+						<article class="col-md-12 event" id="event-pagination">
 							<section class="row d-flex justify-content-center">
 								<figure class="col-md-4 order-md-2 d-none d-md-flex align-items-center justify-content-center">
-									<img class="event-pic" src="http://placehold.jp/90x40.png" alt="event" />
+									<img class="w-100" src="assets/images/events-images/event2.jpg" alt="math-tutorial-poster" />
 								</figure>
 								<section class="col-md-6 text-theme-color2">
-									<h4>Event Title</h4>
-									<h6><i class="far fa-clock"></i> Date</h6>
+									<h4>Math Tutorial</h4>
+									<h6><i class="far fa-clock"></i> May 19, 2017</h6>
 									<p>
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -108,11 +110,11 @@
 						<article class="col-md-12 event">
 							<section class="row d-flex justify-content-center">
 								<figure class="col-md-4 d-none d-md-flex align-items-center justify-content-center">
-									<img class="event-pic" src="http://placehold.jp/90x40.png" alt="event">
+									<img class="w-100" src="assets/images/events-images/event3.jpg" alt="medical-mission-poster">
 								</figure>
 								<section class="col-md-6 text-theme-color2">
-									<h4>Event Title</h4>
-									<h6><i class="far fa-clock"></i> Date</h6>
+									<h4>Medical Mission</h4>
+									<h6><i class="far fa-clock"></i> November 26, 2016</h6>
 									<p>
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -126,7 +128,7 @@
 							</section>
 						</article>
 
-						<div class="col-md-12 event" id="event-pagination">
+						<div class="col-md-12 event">
 							<nav aria-label="Event navigation">
 							  <ul class="pagination justify-content-center">
 							    <li class="page-item">
@@ -145,11 +147,11 @@
 				</div>
 			</section>
 
-			<footer id="footer" class="footer row">
+			<footer id="-footer" class="footer row">
 				<div class="col-md-12">
 					<div id="share-us" class="row text-theme-color3">
 						<div class="col-md-3">
-							<h4>Share us on</h4>
+							<h4 class="animated shake">Share us on</h4>
 						</div>
 						<div class="col-md-2">
 							<button type="button" class="btn-share btn btn-primary">
@@ -236,6 +238,13 @@
 
 	    <!-- external bootstrap js -->
 	    <script type="text/javascript" src="assets/bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>
+
+	    <!-- smooth scroll -->
+	    <script type="text/javascript" src="assets/js/smooth-scroll.js"></script>
+
+	    <script>
+	    	var scroll = new SmoothScroll('a[href*="#-"]');
+	    </script>
 
 	</body>
 </html>

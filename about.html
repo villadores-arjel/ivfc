@@ -9,23 +9,25 @@
 		<link rel="stylesheet" type="text/css" href="assets/bootstrap-4.1.1-dist/css/bootstrap.min.css">
 		<!-- external css -->
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<!-- animated css -->
+		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 		<!-- font awesome -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 		<!-- google fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round" rel="stylesheet">
 		<!-- favicon -->
-		<link rel="icon" type="image/gif/png" href="fab_icon_sample.png">
+		<link rel="icon" type="image/gif/png" href="fab_icon.png">
 	</head>
 	<body>
 		<main class="container-fluid">
 			<header class="row banner-about">
 				<div class="wrapper wrapper-black">
-					<nav class="navbar navbar-expand-lg navbar-dark bg-transparent" >
+					<nav class="navbar navbar-expand-lg navbar-dark fixed-nav bg-theme-nav" >
 						<button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target=#menuNav>
 							<span class="navbar-toggler-icon"></span>
 						</button>
 
-						<a class="navbar-brand" href="index.html"><h1 class="text-theme-color2">iVFC</h1></a>
+						<a class="navbar-brand" href="index.html"><h1 class="text-theme-color2 logo">iVFC</h1></a>
 
 						<div class="collapse navbar-collapse" id="menuNav">
 							<ul class="navbar-nav justify-content-center d-flex flex-fill">
@@ -33,7 +35,7 @@
 									<a class="nav-link text-theme-color2" href="index.html">HOME</a>
 								</li>
 								<li class="nav-item mr-5">
-									<a class="nav-link text-theme-color2" href="about.html">ABOUT</a>
+									<a class="nav-link text-theme-color2" href="about.html">ABOUT US</a>
 								</li>
 								<li class="nav-item mr-5">
 									<a class="nav-link text-theme-color2" href="join.html">JOIN US</a>
@@ -45,15 +47,15 @@
 									<a class="nav-link text-theme-color2" href="donate.html">DONATE</a>
 								</li>
 								<li class="nav-item mr-5">
-									<a class="nav-link text-theme-color2" href="#footer">CONTACT US</a>
+									<a class="nav-link text-theme-color2" href="#-footer">CONTACT US</a>
 								</li>
 							</ul>
 						</div>
 					</nav>
 
 				  	<div class="banner-text col-md-12 bg-transparent">
-				  		<h2 class="text-theme-color2 display-md-4">We Teach...We Feed...</h2>
-				  		<h2 class="text-theme-color2 display-md-4">We Make them happy</h2>
+				  		<h2 class="text-theme-color2 display-md-4 animated fadeInUp">We Teach...We Feed...</h2>
+				  		<h2 class="text-theme-color2 display-md-4 animated fadeInDown">We Make them happy</h2>
 				  	</div>
 				</div> <!-- wrapper for image background -->
 			</header> <!-- end banner -->
@@ -104,27 +106,27 @@
 				</div>
 				<figure id="carousel-gallery-control" class="col-md-12 carousel slide" data-interval="false" data-ride="carousel">
 					<div class="carousel-inner">
-					    <div class="carousel-item active carousel-item-gallery">
+					    <div class="carousel-item active">
 					      	<!--trigger modal -->	
-							<img class="d-flex w-100 gallery-img" data-toggle="modal" data-target="#img-1" src="https://picsum.photos/200/100/" alt="First slide" />
+							<img class="w-100" data-toggle="modal" data-target="#img-1" src="assets/images/gallery/gallery-img-1.jpg" alt="First slide" />
 					      	<div class="carousel-caption d-none d-md-block">
 						    	<p>
 						    		1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 						    	</p>
 						  	</div>
 					    </div>
-					    <div class="carousel-item carousel-item-gallery">
+					    <div class="carousel-item">
 					      <!--trigger modal -->	
-							<img class="d-flex w-100 gallery-img" data-toggle="modal" data-target="#img-2" src="https://picsum.photos/200/300/" alt="First slide" />
+							<img class="w-100" data-toggle="modal" data-target="#img-2" src="assets/images/gallery/gallery-img-2.jpg" alt="First slide" />
 					      	<div class="carousel-caption d-none d-md-block">
 						    	<p>
 						    		2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 						    	</p>
 						  	</div>
 					    </div>
-					    <div class="carousel-item carousel-item-gallery">
+					    <div class="carousel-item">
 					      <!--trigger modal -->	
-							<img class="d-flex w-100 gallery-img" data-toggle="modal" data-target="#img-3" src="https://picsum.photos/100/300/" alt="First slide" />
+							<img class="w-100" data-toggle="modal" data-target="#img-3" src="assets/images/gallery/gallery-img-3.jpg" alt="First slide" />
 					      	<div class="carousel-caption d-none d-md-block">
 						    	<p>
 						    		3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -147,7 +149,7 @@
 				<div class="modal fade" id="img-1" tabindex="-1" role="dialog">
 				  <div class="modal-dialog modal-dialog-centered" role="document">
 				    <div class="modal-content">
-				       <img class="d-flex w-100" src="https://picsum.photos/200/100/" alt="First slide" />
+				       <img class="w-100" src="assets/images/gallery/gallery-img-1.jpg" alt="First slide" />
 				    </div>
 				  </div>
 				</div>
@@ -155,7 +157,7 @@
 				<div class="modal fade" id="img-2" tabindex="-1" role="dialog">
 				  <div class="modal-dialog modal-dialog-centered" role="document">
 				    <div class="modal-content">
-				       <img class="d-flex w-100" src="https://picsum.photos/200/300/" alt="First slide" />
+				       <img class="w-100" src="assets/images/gallery/gallery-img-2.jpg" alt="First slide" />
 				    </div>
 				  </div>
 				</div>
@@ -163,18 +165,18 @@
 				<div class="modal fade" id="img-3" tabindex="-1" role="dialog">
 				  <div class="modal-dialog modal-dialog-centered" role="document">
 				    <div class="modal-content">
-				       <img class="d-flex w-100" src="https://picsum.photos/100/300/" alt="First slide" />
+				       <img class="w-100" src="assets/images/gallery/gallery-img-3.jpg" alt="First slide" />
 				    </div>
 				  </div>
 				</div>
 
 			</section> <!-- end gallery -->
 
-			<footer id="footer" class="footer row">
+			<footer id="-footer" class="footer row">
 				<div class="col-md-12">
 					<div id="share-us" class="row text-theme-color3">
 						<div class="col-md-3">
-							<h4>Share us on</h4>
+							<h4 class="animated shake">Share us on</h4>
 						</div>
 						<div class="col-md-2">
 							<button type="button" class="btn-share btn btn-primary">
@@ -262,6 +264,13 @@
 
 	    <!-- external bootstrap js -->
 	    <script type="text/javascript" src="assets/bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>
+
+	    <!-- smooth scroll -->
+	    <script type="text/javascript" src="assets/js/smooth-scroll.js"></script>
+
+	    <script>
+	    	var scroll = new SmoothScroll('a[href*="#-"]');
+	    </script>
 
 	</body>
 </html>
