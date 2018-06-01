@@ -9,23 +9,25 @@
 		<link rel="stylesheet" type="text/css" href="assets/bootstrap-4.1.1-dist/css/bootstrap.min.css">
 		<!-- external css -->
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<!-- animated css -->
+		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 		<!-- font awesome -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 		<!-- google fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round" rel="stylesheet">
 		<!-- favicon -->
-		<link rel="icon" type="image/gif/png" href="fab_icon_sample.png">
+		<link rel="icon" type="image/gif/png" href="fab_icon.png">
 	</head>
 	<body>
 		<main class="container-fluid">
 			<header class="row banner-index">
 				<div class="wrapper wrapper-light">
-					<nav class="navbar navbar-expand-lg navbar-dark bg-transparent" >
+					<nav class="navbar navbar-expand-lg navbar-dark fixed-nav bg-theme-nav" >
 						<button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target=#menuNav>
 							<span class="navbar-toggler-icon"></span>
 						</button>
 
-						<a class="navbar-brand" href="index.html"><h1 class="text-theme-color2">iVFC</h1></a>
+						<a class="navbar-brand" href="index.html"><h1 class="text-theme-color2 logo">iVFC</h1></a>
 
 						<div class="collapse navbar-collapse" id="menuNav">
 							<ul class="navbar-nav justify-content-center d-flex flex-fill">
@@ -33,7 +35,7 @@
 									<a class="nav-link text-theme-color2" href="index.html">HOME</a>
 								</li>
 								<li class="nav-item mr-5">
-									<a class="nav-link text-theme-color2" href="about.html">ABOUT</a>
+									<a class="nav-link text-theme-color2" href="about.html">ABOUT US</a>
 								</li>
 								<li class="nav-item mr-5">
 									<a class="nav-link text-theme-color2" href="join.html">JOIN US</a>
@@ -45,15 +47,15 @@
 									<a class="nav-link text-theme-color2" href="donate.html">DONATE</a>
 								</li>
 								<li class="nav-item mr-5">
-									<a class="nav-link text-theme-color2" href="#footer">CONTACT US</a>
+									<a class="nav-link text-theme-color2" href="#-footer">CONTACT US</a>
 								</li>
 							</ul>
 						</div>
 					</nav>
 
 				  	<div class="banner-text col-md-12 bg-transparent">
-				  			<h2 class="text-theme-color2 display-md-4">Our Children are our <span class="text-theme-color4">FUTURE</span></h2>
-				  			<h2 class="text-theme-color2 display-md-4">They should not be <span class="text-theme-color3">NEGLECTED</span></h2>	
+				  			<h2 class="text-theme-color2 display-md-4 animated fadeInUp">Our Children are our <span class="text-theme-color4">FUTURE</span></h2>
+				  			<h2 class="text-theme-color2 display-md-4 animated fadeInDown">They should not be <span class="text-theme-color3">NEGLECTED</span></h2>	
 				  	</div>
 				</div> <!-- wrapper for image background -->
 			</header> <!-- end banner -->
@@ -66,10 +68,7 @@
 				  					<h5><i class="fas fa-rocket fa-2x"></i></h5>
 				  					<h5>Mission</h5>
 				  					<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-										consequat.
+										To help less-priviledged Filipino children
 									</p>
 				  				</div>
 				  			</div>
@@ -78,10 +77,7 @@
 				  					<h5><i class="fas fa-eye fa-2x"></i></h5>
 				  					<h5>Vision</h5>
 				  					<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-										consequat.
+										To make less-priviledged Filipino children to become a well-rounded citizens of the next generation
 									</p>
 				  				</div>
 				  			</div>
@@ -89,7 +85,7 @@
 				  	</div>
 			</section>
 
-			<footer id="footer" class="footer row">
+			<footer id="-footer" class="footer row">
 				<div class="col-lg-12">
 					<div id="contact" class="row">
 						<div id="contact-us" class="col-lg-4 order-lg-2">
@@ -150,6 +146,13 @@
 
 	    <!-- external bootstrap js -->
 	    <script type="text/javascript" src="assets/bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>
+
+	    <!-- smooth scroll -->
+	    <script type="text/javascript" src="assets/js/smooth-scroll.js"></script>
+
+	    <script>
+	    	var scroll = new SmoothScroll('a[href*="#-"]');
+	    </script>
 
 	</body>
 </html>
