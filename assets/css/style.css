@@ -114,23 +114,13 @@ a
 	font-size: 1.5rem;
 }
 
-/*navbar overrides*/
-.fixed-nav
+#menuNav .nav-link:hover, #menuNav .nav-link:focus, #menuNav .nav-link.active
 {
-	position: absolute;
-  	top: 0;
-  	right: 0;
-  	left: 0;
-  	z-index: 1030;
-  	padding: 0 3%;
+	color: color: rgba(239, 249, 227, 0.5);
+	border-bottom: 1px solid rgb(239, 249, 227);
 }
 
-#menuNav>ul>li>a:hover, #menuNav>ul>li>a:active
-{
-	background-color: rgb(85, 109, 90);
-}
-
-.navbar-dark .navbar-nav .nav-link
+#menuNav .nav-link
 {
 	font-size: 16px;
 }
@@ -147,13 +137,6 @@ a
 	box-shadow: 0 0 0 0.2rem rgba(41, 76, 50, 0.25);
 }
 
-.form-control:focus
-{
-	border-color: #75f4b0;
-	box-shadow: 0 0 0 0.2rem rgba(41, 76, 50, 0.25);
-}
-
-/*override btn-primary color*/
 .btn-theme
 {
 	background-color: rgb(35, 66, 43) !important;
@@ -169,7 +152,7 @@ a
 /*--------------------------------------------------
 			styles for index page
 ----------------------------------------------------*/
-.banner-index
+.row.banner-index
 {
   background-image: url(../images/banner-index-bg.jpeg);
   background-size: cover;
@@ -177,6 +160,7 @@ a
   background-attachment: fixed;
   background-position: center center;
   min-height: 100vh;
+  position: relative;
 }
 
 .mission-vision
@@ -187,27 +171,22 @@ a
 
 .mission-vision-pos
 {
-	position: absolute;
-	bottom: 0;
+	position: static;
+	margin-top: 50vh;
 }
 
 /*--------------------------------------------------
 			styles for about page
 ----------------------------------------------------*/
-.banner-about
+.story
 {
-  background-image: url(../images/banner-about.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
-  min-height: 650px;
+	padding: 5%;
+	text-align: center;
 }
 
-.about-content
+.founder
 {
-	padding: 0 5%;
-	margin: 2.2%;
+	padding: 2%;
 	text-align: center;
 }
 
@@ -430,9 +409,39 @@ a
 	text-align: center;
 }
 
+.social-links a
+{
+	margin: 0 10px;
+}
+
 .footer .input-group-text
 {
 	background-color: rgb(208, 224, 212);
+}
+
+/*--------------------------------------------------
+			back to top button
+----------------------------------------------------*/
+#btn-back-top 
+{
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 30px; 
+    z-index: 9999;
+    border: none;
+    outline: none;
+    background-color: rgba(140, 173, 149, 0.2);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#btn-back-top:hover 
+{
+    background-color: rgba(140, 173, 149, 0.7);
 }
 
 
@@ -440,27 +449,20 @@ a
 /*--------------------------------------------------
 			media queries
 ----------------------------------------------------*/
-/*Small height but large width*/
-@media (min-width: 768px) and (max-height: 800px)
+/*Extra large height devices*/
+@media (min-height: 900px)
 {
 	.mission-vision-pos
 	{
-		 position: relative;
-		 top: 100%;
+		position: absolute;
+		bottom: 0;
+		margin-top: 0;
 	}
 }
-
 
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) 
 {
-
-	.mission-vision-pos
-	{
-		 position: relative;
-		 top: 100%;
-	}
-
 	#share-us
 	{
 		margin-top: 19px;
@@ -483,12 +485,6 @@ a
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px)
 {
-	.mission-vision-pos
-	{
-		 position: relative;
-		 top: 100%;
-	}
-
 	#share-us
 	{
 		margin-top: 19px;
@@ -526,7 +522,7 @@ a
 @media (min-width: 992px) and (max-width: 1199.98px) 
 {
 	/*un-fixed top navbar on large and xl screen*/
-	.fixed-nav
+	.fixed-top.fixed-nav
 	{
 		position: relative;
 		padding: 3%;
@@ -535,6 +531,12 @@ a
 	.bg-theme-nav
 	{
 		background-color: transparent;
+	}
+
+	.gallery>.carousel>.carousel-inner>.carousel-item>img
+	{
+		width: 75% !important;
+		height: 75% !important;
 	}
 
 	#share-us
@@ -579,7 +581,7 @@ a
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) 
 {
-	.fixed-nav
+	.fixed-top.fixed-nav
 	{
 		position: relative;
 		padding: 3%;
@@ -588,6 +590,12 @@ a
 	.bg-theme-nav
 	{
 		background-color: transparent;
+	}
+
+	.gallery>.carousel>.carousel-inner>.carousel-item>img
+	{
+		width: 75% !important;
+		height: 75% !important;
 	}
 
 	#share-us

@@ -3274,6 +3274,9 @@
 .slideInDown {
   -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+
 }
 
 @-webkit-keyframes slideInLeft {
