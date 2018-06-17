@@ -19,246 +19,269 @@
 		<link rel="icon" type="image/gif/png" href="fab_icon.png">
 	</head>
 	<body>
-		<main class="container-fluid bg-donate">
-			<div class="wrapper-green-dark">
-				<div class="col-md-12">
-					<header class="row">
-						<div class="wrapper">
-							<nav class="navbar navbar-expand-lg navbar-dark fixed-nav bg-theme-nav" >
-								<button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target=#menuNav>
-									<span class="navbar-toggler-icon"></span>
-								</button>
+		<main class="bg-donate">
+			<div class="container-fluid wrapper-green-dark">
+				<header>
+					<nav class="navbar navbar-expand-lg navbar-dark fixed-top fixed-nav bg-theme-nav" >
+						<button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target=#menuNav>
+							<span class="navbar-toggler-icon"></span>
+						</button>
 
-								<a class="navbar-brand" href="index.html"><h1 class="text-theme-color2 logo">iVFC</h1></a>
+						<a class="navbar-brand" href="index.html"><h1 class="text-theme-color2 logo">iVFC</h1></a>
 
-								<div class="collapse navbar-collapse" id="menuNav">
-									<ul class="navbar-nav justify-content-center d-flex flex-fill">
-										<li class="nav-item mr-5">
-											<a class="nav-link text-theme-color2" href="index.html">BACK TO HOME</a>
-										</li>
-										<li class="nav-item mr-5">
-											<a class="nav-link text-theme-color2" href="#-footer">CONTACT US</a>
-										</li>
-									</ul>
-								</div>
-							</nav>
-						</div> <!-- wrapper for image background -->
-					</header> <!-- end banner -->
+						<div class="collapse navbar-collapse" id="menuNav">
+							<ul class="navbar-nav justify-content-center d-flex flex-fill">
+								<li class="nav-item mr-5">
+									<a class="nav-link text-theme-color2" href="index.html">HOME</a>
+								</li>
+								<li class="nav-item mr-5">
+									<a class="nav-link text-theme-color2" href="#-footer">CONTACT US</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</header> <!-- end banner -->
 
-					<section class="row donate text-theme-color2">
-						<div class="col-12 donate-intro">
-							<h2>All Donations goes to</h2>
-							<hr class="my-3 bg-line-color" />
-							<div class="row">
-								<div class="col-lg-4">
-									<i class="fas fa-utensils fa-5x text-theme-color4"></i>
-								</div>
-								<div class="col-lg-6">
-									<h3>Feeding Program</h3>
-									<p>
-										Feeding children in....
-									</p>
-									<p>
-										Feeding children in....
-									</p>
-								</div>
+				<button id="btn-back-top" title="Go to top"><i class="fas fa-chevron-up fa-2x"></i></button>
+
+				<section class="row donate text-theme-color2">
+					<div class="col-12">
+						<h3>All Donations goes to</h3>
+						<div class="row">
+							<div class="col-lg-3 donate-goes wow fadeInRight">
+								<i class="fas fa-utensils fa-5x text-theme-color4"></i>
+								<h3>Feeding Program</h3>
+								<p>
+									Feeding children in....Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								</p>
 							</div>
-							<div class="row">
-								<div class="col-lg-4">
-									<i class="fas fa-chalkboard-teacher fa-5x text-theme-color4"></i>
-								</div>
-								<div class="col-lg-6">
-									<h3>Child's Learnings</h3>
-									<p>
-										Teaching children ...
-									</p>
-									<p>
-										Teaching children ...
-									</p>
-								</div>
+
+							<div class="col-lg-3 donate-goes wow fadeInRight" data-wow-delay="1s">
+								<i class="fas fa-chalkboard-teacher fa-5x text-theme-color4"></i>
+								<h3>Child's Learnings</h3>
+								<p>
+									Teaching children ...Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								</p>
 							</div>
-							<div class="row">
-								<div class="col-lg-4">
-									<i class="fas fa-pencil-alt fa-5x text-theme-color4"></i>
-								</div>
-								<div class="col-lg-6">
-									<h3>School Supplies</h3>
-									<p>
-										Giving them supplies....
-									</p>
-									<p>
-										Giving them supplies....
-									</p>
-								</div>
+
+							<div class="col-lg-3 donate-goes wow fadeInRight" data-wow-delay="2s">
+								<i class="fas fa-pencil-alt fa-5x text-theme-color4"></i>
+								<h3>School Supplies</h3>
+								<p>
+									Giving them supplies....Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								</p>
 							</div>
-						</div>	<!-- end donate-intro -->
-					</section> <!-- end donate -->
+						</div>
+					</div>
+				</section> <!-- end donate -->
 
-					<section class="row donate-type">
-						
-					</section>
+				<section class="row donate text-theme-color2">
+					<div class="col-12">
+						<h4>Ways you can donate</h4>
+						<div class="row donate-type-container">
+							<div class="col-6 col-lg-3 order-lg-1 donate-type wrapper-green-dark wow fadeInLeft">
+								<h5>In Person</h5>
+								<i class="far fa-user fa-lg text-theme-color4"></i>
+								<p>
+									You can visit us at
+								</p>
+								<p>
+									Adress....
+								</p>
+							</div>
+							<div class="col-6 col-lg-3 order-lg-2 donate-type wrapper-green-light wow fadeInLeft" data-wow-delay="1s">
+								<h5>Online</h5>
+								<i class="fas fa-globe fa-lg text-theme-color4"></i>
+								<p>
+									You can donate online. Simple click the button below
+								</p>
+								<p>
+									<button data-toggle="modal" data-target="#donate-form" class="btn btn-theme">Donate</button>
+								</p>
+							</div>
+							<div class="col-6 col-lg-3 order-lg-4 donate-type wrapper-green-light wow fadeInRight" data-wow-delay="2s">
+								<h5>Over the phone</h5>
+								<i class="fas fa-phone fa-lg text-theme-color4"></i>
+								<p>
+									You can call us at
+								</p>
+								<p>
+									Phone....
+								</p>
+							</div>
+							<div class="col-6 col-lg-3 order-lg-3 donate-type wrapper-green-dark wow fadeInRight" data-wow-delay="3s">
+								<h5>By email</h5>
+								<i class="far fa-envelope fa-lg text-theme-color4"></i>
+								<p>
+									You can email us at
+								</p>
+								<p>
+									email add...
+								</p>
+							</div>
+						</div>
+					</div>
+				</section><!-- end donate-type -->
 
-					<div class="col-lg-6 order-lg-2 align-self-center">
-							<div class="row donate-box">
-								<div class="col-lg-12">
-									<h2>Donate now</h2>
-									<form class="donate-form">
-									  <div class="form-group">
-									    <label for="donateAmount"><i class="fas fa-coins fa-3x"></i> Amount</label>
-									    <input type="number" class="form-control" id="donateAmount" value="20" />
-									  </div>
 
-									  <h4>Select payment method</h4>
-									  <hr class="my-3 text-theme-color2"/>
+				<div class="modal fade text-theme-color2 donate-form-modal" id="donate-form" tabindex="-1" role="dialog">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content donate-box">
+								<h2>Donate now</h2>
+								<form class="donate-form">
+								  <div class="form-group">
+								    <label for="donateAmount"><i class="fas fa-coins fa-3x"></i> Amount</label>
+								    <input type="number" class="form-control" id="donateAmount" value="20" />
+								  </div>
 
-									  <fieldset class="form-group">
-									        <div class="form-check">
-									          <input class="form-check-input" type="radio" name="payment" id="paypal" value="paypal" checked>
-									          <label class="form-check-label" for="paypal">
-									            Paypal
-									          </label>
-									        </div>
-									        <div class="form-check">
-									          <input class="form-check-input" type="radio" name="payment" id="card" value="card">
-									          <label class="form-check-label" for="card">
-									            Credit Card
-									          </label>
-									        </div>
-									        <div class="form-check disabled">
-									          <input class="form-check-input" type="radio" name="payment" id="offline" value="offline">
-									          <label class="form-check-label" for="offline">
-									            Offline Donations
-									          </label>
-									        </div>
-									  </fieldset>
+								  <h4>Select payment method</h4>
+								  <hr class="my-3 text-theme-color2"/>
 
-									  <h4>Personal Info</h4>
-									  <hr class="my-3 text-theme-color2"/>
+								  <fieldset class="form-group">
+								        <div class="form-check">
+								          <input class="form-check-input" type="radio" name="payment" id="paypal" value="paypal" checked>
+								          <label class="form-check-label" for="paypal">
+								            Paypal
+								          </label>
+								        </div>
+								        <div class="form-check">
+								          <input class="form-check-input" type="radio" name="payment" id="card" value="card">
+								          <label class="form-check-label" for="card">
+								            Credit Card
+								          </label>
+								        </div>
+								  </fieldset>
 
-									  <div class="form-group">
+								  <h4>Personal Info</h4>
+								  <hr class="my-3 text-theme-color2"/>
+
+								  <div class="form-row">
+									  <div class="form-group col-md-6">
 									    <label for="firstName">First Name</label>
 									    <input type="text" class="form-control" id="firstName" />
 									  </div>
 
-									  <div class="form-group">
+									   <div class="form-group col-md-6">
 									    <label for="lastName">Last Name</label>
 									    <input type="text" class="form-control" id="lastName" />
 									  </div>	
+								  </div>
 
-									  <div class="form-group">
+								  <div class="form-row">
+									  <div class="form-group col-md-6">
 									    <label for="contact">Contact Number</label>
 									    <input type="number" class="form-control" id="contact" />
 									  </div>
 
-									  <div class="form-group">
+									  <div class="form-group col-md-6">
 									    <label for="email">Email address</label>
 									    <input type="email" class="form-control" id="email" />
 									    <small id="emailHelp" class="form-text text-muted text-theme-color2">We'll never share your email with anyone else.</small>
 									  </div>
+								  </div>
 
-									  <div class="form-check">
-									    <input type="checkbox" class="form-check-input" id="receiveNews">
-									    <label class="form-check-label" for="receiveNews">Subscribe on our news letter</label>
-									  </div>
+								  <div class="form-check">
+								    <input type="checkbox" class="form-check-input" id="receiveNews" />
+								    <label class="form-check-label" for="receiveNews">Subscribe on our news letter</label>
+								  </div>
 
-									  <div class="form-group">
-									    <textarea class="form-control" rows="5" placeholder="Leave us a message"></textarea>
-									  </div>
+								  <div class="form-group">
+								    <textarea class="form-control" rows="5" placeholder="Leave us a message"></textarea>
+								  </div>
 
-									  <button type="submit" class="btn-theme-size btn-theme btn btn-primary">Submit</button>
-									</form>
-								</div>
-							</div> <!-- end donate-box -->
-						</div>
-
-					<footer id="-footer" class="footer row">
-						<div class="col-md-12">
-							<div id="share-us" class="row text-theme-color3">
-								<div class="col-md-3">
-									<h4 class="wow shake text-theme-color2">Share us on</h4>
-								</div>
-								<div class="col-md-2">
-									<button type="button" class="btn-share btn btn-primary">
-										<a href="https://www.facebook.com/ivfc.philippines/" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a>
-									</button>
-								</div>
-
-								<div class="col-md-2">
-									<button type="button" class="btn-share btn btn-danger">
-										<a  href="https://www.instagram.com/?hl=en" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-									</button>
-								</div>
-
-								<div class="col-md-2">
-									<button type="button" class="btn-share btn btn-info">
-										<a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-									</button>
-								</div>
-
-								<div class="col-md-2">
-									<button type="button" class="btn-share btn btn-danger">
-										<a  href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest"></i> Pinterest</a>
-									</button>
-								</div>
+								  <button type="submit" class="btn-theme-size btn btn-theme">Submit</button>
+								</form>
 							</div>
-						</div>
-
-						<div class="col-lg-12">
-							<div id="contact" class="row">
-								<div id="contact-us" class="col-lg-4 order-lg-2">
-									<h6>Contact Us</h6>
-									<i class="fas fa-home"></i> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-									<br/>
-									<i class="fas fa-phone"></i> <p>+63---------- | 02-------</p>
-									<br/>
-									<i class="fas fa-envelope-open"></i> <p>ivfc@</p>
-								</div>
-								<div class="col-lg-4 order-lg-1">
-									<h6>Follow Us</h6>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-										consequat.
-									</p>
-									<div class="social-links">
-										<a href="https://www.facebook.com/ivfc.philippines/" target="_blank"><i class="fab fa-facebook-square fa-lg text-primary"></i></a>
-										<a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter fa-lg text-info"></i></a>
-										<a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest fa-lg text-danger"></i></a>
-										<a  href="https://vimeo.com/" target="_blank"><i class="fab fa-vimeo-v fa-lg text-info"></i></a>
-										<a  href="https://www.instagram.com/?hl=en" target="_blank"><i class="fab fa-instagram fa-lg text-danger"></i></a>
-									</div>
-									
-								</div>
-								<div class="col-lg-4 order-lg-2 order-lg-3">
-									<h6>Subscribe on our news letter</h6>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-										consequat.
-									</p>
-									<div class="input-group mb-3">
-										<input id="subscriber-email" type="email" class="form-control" placeholder="Enter your email" />
-										  <div class="input-group-append">
-										    <span class="input-group-text" id="basic-addon2">
-										    	<button type="button" class="btn btn-theme">Submit</button>
-										    </span>
-										  </div>
-									</div>
-								</div>
-								<div id="copyright" class="col-lg-12 order-lg-4">
-									<small>Copyright &copy; 2018 | iVolunteer for Filipino Childen</small>
-								</div>
-							</div>
-						</div>
-					</footer> <!-- end footer -->
+						</div> <!-- end donate-box -->
 				</div>
-			</div>		
+
+				<footer id="-footer" class="footer row">
+					<div class="col-md-12">
+						<div id="share-us" class="row text-theme-color3">
+							<div class="col-md-3">
+								<h4 class="wow shake text-theme-color2">Share us on</h4>
+							</div>
+							<div class="col-md-2">
+								<button type="button" class="btn-share btn btn-primary">
+									<a href="https://www.facebook.com/ivfc.philippines/" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a>
+								</button>
+							</div>
+
+							<div class="col-md-2">
+								<button type="button" class="btn-share btn btn-danger">
+									<a  href="https://www.instagram.com/?hl=en" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+								</button>
+							</div>
+
+							<div class="col-md-2">
+								<button type="button" class="btn-share btn btn-info">
+									<a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+								</button>
+							</div>
+
+							<div class="col-md-2">
+								<button type="button" class="btn-share btn btn-danger">
+									<a  href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest"></i> Pinterest</a>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-12">
+						<div id="contact" class="row">
+							<div id="contact-us" class="col-lg-4 order-lg-2">
+								<h6>Contact Us</h6>
+								<i class="fas fa-home"></i> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+								<br/>
+								<i class="fas fa-phone"></i> <p>+63---------- | 02-------</p>
+								<br/>
+								<i class="fas fa-envelope-open"></i> <p>ivfc@</p>
+							</div>
+							<div class="col-lg-4 order-lg-1">
+								<h6>Follow Us</h6>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat.
+								</p>
+								<div class="social-links">
+									<a href="https://www.facebook.com/ivfc.philippines/" target="_blank"><i class="fab fa-facebook-square fa-lg text-primary"></i></a>
+									<a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter fa-lg text-info"></i></a>
+									<a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest fa-lg text-danger"></i></a>
+									<a  href="https://vimeo.com/" target="_blank"><i class="fab fa-vimeo-v fa-lg text-info"></i></a>
+									<a  href="https://www.instagram.com/?hl=en" target="_blank"><i class="fab fa-instagram fa-lg text-danger"></i></a>
+								</div>
+								
+							</div>
+							<div class="col-lg-4 order-lg-2 order-lg-3">
+								<h6>Subscribe on our news letter</h6>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat.
+								</p>
+								<div class="input-group mb-3">
+									<input id="subscriber-email" type="email" class="form-control" placeholder="Enter your email" />
+									  <div class="input-group-append">
+									    <span class="input-group-text" id="basic-addon2">
+									    	<button type="button" class="btn btn-theme">Submit</button>
+									    </span>
+									  </div>
+								</div>
+							</div>
+							<div id="copyright" class="col-lg-12 order-lg-4">
+								<small>Copyright &copy; 2018 | iVolunteer for Filipino Childen</small>
+							</div>
+						</div>
+					</div>
+				</footer> <!-- end footer -->
+			</div>	<!-- end wrapper	 -->
 		</main> <!-- end main -->
 
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
@@ -267,10 +290,23 @@
 
 	    <!-- smooth scroll -->
 	    <script type="text/javascript" src="assets/js/smooth-scroll.js"></script>
-
 	    <script>
 	    	var scroll = new SmoothScroll('a[href*="#-"]');
 	    </script>
+
+	    <!-- spy scroll -->
+	    <script>
+	    	$('body').scrollspy({ target: '#menuNav' });
+	    </script>
+
+	    <!-- wow js -->
+	    <script src="assets/js/wow.js"></script>
+        <script>
+          	new WOW().init();
+        </script>
+
+        <!-- custom-js -->
+        <script type="text/javascript" src="assets/js/custom-script.js"></script>
 
 	</body>
 </html>

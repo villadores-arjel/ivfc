@@ -110,8 +110,7 @@ a
 
 #menuNav .nav-link:hover, #menuNav .nav-link:focus, #menuNav .nav-link.active
 {
-	color: color: rgba(239, 249, 227, 0.5);
-	border-bottom: 1px solid rgb(239, 249, 227);
+	color: rgba(239, 249, 227, 0.5) !important;
 }
 
 #menuNav .nav-link
@@ -213,7 +212,6 @@ a
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
-  padding: 0;
   padding: 3% 5%;
 }
 
@@ -222,9 +220,10 @@ a
 	text-align: center;
 }
 
-.volunteer-images
+.volunteer-image
 {
-	width: 150px;
+	margin: 10px 10px;
+	width: 250px;
 	height: 200px;
 }
 
@@ -360,14 +359,49 @@ a
 
 .donate
 {
-	padding: 2% 5% 5%;
+	padding: 5% 5% 5%;
 	margin-top: 50px;
+	text-align: center;
+}
+
+.donate-goes
+{
+	margin: 5px auto;
+	padding: 2%;
+	min-height: 350px;
+	max-height: 350px;
+	background-color: rgba(134, 249, 142, 0.2);
+	border-radius: 2%;
+}
+
+.donate-goes *
+{
+	margin-top: 20px;
+}
+
+.row.donate-type-container
+{
+	margin: 0 -5%;
+}
+
+.donate-type
+{
+	padding: 50px 0;
+	margin: 0;
+	min-height: 300px;
+	max-height: 300px;
+}
+
+.donate-type p
+{
+	margin: 10px;
+	font-size: 15px;
+	text-align: center;
 }
 
 .donate-box
 {
 	text-align: center;
-	margin: 2%;
 	padding: 2%;
 	border-radius: 2%;
 	background-color: rgba(134, 249, 142, 0.2);
@@ -381,15 +415,11 @@ a
 	background-color: rgba(217, 252, 146, 0.3);
 }
 
-.donate-intro
+.donate-form-modal.modal.fade
 {
-	padding: 2%;
-	text-align: center;
-}
-
-.donate-intro div[class*=col]
-{
-	padding: 0;
+	padding-left: 50px !important;
+	background-color: rgba(36, 66, 43,0.9);
+	z-index: 9999;
 }
 
 /*--------------------------------------------------
@@ -468,7 +498,7 @@ a
     position: fixed;
     bottom: 10px;
     right: 30px; 
-    z-index: 9999;
+    z-index: 9990;
     border: none;
     outline: none;
     background-color: rgba(140, 173, 149, 0.2);
@@ -500,8 +530,8 @@ a
 	}
 }
 
-/*Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) 
+/*Extra small and small devices*/
+@media (max-width: 767.98px) 
 {
 	#share-us
 	{
@@ -516,22 +546,7 @@ a
 	}
 }
 
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767.98px)
-{
-	#share-us
-	{
-		margin-top: 19px;
-	}
-	.donate-box
-	{
-		margin-left: -33px;
-		margin-right: -33px;
-		border-radius: 0;
-	}
-}
-
-/*Medium devices (tablets, 768px and up)*/
+/*Medium devices*/
 @media (min-width: 768px) and (max-width: 991.98px) 
 {
 	#share-us
@@ -551,10 +566,17 @@ a
 	{
 		font-size: 2.5rem;
 	}
+
+	.donate-type
+	{
+		padding: 50px 20px;
+		min-height: 250px;
+		max-height: 250px;
+	}
 }
 
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199.98px) 
+/*Large and XL devices*/
+@media (min-width: 992px)
 {
 	/*un-fixed top navbar on large and xl screen*/
 	.fixed-top.fixed-nav
@@ -568,60 +590,9 @@ a
 		background-color: transparent;
 	}
 
-	.gallery>.carousel>.carousel-inner>.carousel-item>img
+	#menuNav .nav-link:hover, #menuNav .nav-link:focus, #menuNav .nav-link.active
 	{
-		width: 75% !important;
-		height: 75% !important;
-	}
-
-	#share-us
-	{
-		position: relative;
-		top: -40%;
-	}
-
-	#contact-us
-	{
-		border-left: 1px dotted white;
-		border-right: 1px dotted white;
-	}
-
-	.display-md-4
-	{
-		font-size: 3.0rem;
-		font-weight: 300;
-		line-height: 1.2;
-	}
-
-	.banner-text
-	{
-		text-align: center;
-		margin-top: 100px;
-	}
-
-	.logo
-	{
-		font-size: 2.75rem;
-	}
-
-	.donate
-	{
-		margin-top: 0;
-	}
-}
-
-/*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) 
-{
-	.fixed-top.fixed-nav
-	{
-		position: relative;
-		padding: 3%;
-	}
-
-	.bg-theme-nav
-	{
-		background-color: transparent;
+		border-bottom: 1px solid rgb(239, 249, 227);
 	}
 
 	.gallery>.carousel>.carousel-inner>.carousel-item>img
@@ -644,7 +615,7 @@ a
 
 	.display-md-4
 	{
-		font-size: 3.5rem;
+		font-size: 3.2rem;
 		font-weight: 300;
 		line-height: 1.2;
 	}
@@ -663,5 +634,19 @@ a
 	.donate
 	{
 		margin-top: 0;
+		padding-top: 0;
+	}
+
+	.donate-goes
+	{
+		min-height: 500px;
+		max-height: 500px;
+	}
+
+	.donate-type
+	{
+		padding: 75px 20px;
+		min-height: 350px;
+		max-height: 350px;
 	}
 }
