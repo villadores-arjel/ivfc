@@ -35,7 +35,7 @@ a
 }
 
 /*--------------------------------------------------
-			common styles for all pages
+			theme color and bg color
 ----------------------------------------------------*/
 .wrapper
 {
@@ -46,11 +46,6 @@ a
 .wrapper-padding
 {
 	padding: 5%;
-}
-
-.wrapper-black
-{
-	background-color: rgba(0,0,0,0.4);
 }
 
 .wrapper-light
@@ -68,11 +63,6 @@ a
 	background-color: rgba(85, 109, 90,0.8);
 }
 
-.bg-theme-color
-{
-	background-color: rgb(140, 173, 149);
-}
-
 .bg-theme-nav
 {
 	background-color: rgb(140, 173, 149);
@@ -80,28 +70,32 @@ a
 
 .bg-line-color
 {
-	background-color: rgb(239, 249, 227);
+	border-color: rgb(239, 249, 227);
 }
 
 .text-theme-color
 {
-	color: rgb(216, 189, 166) !important; /*pinkish*/
+	color: rgb(216, 189, 166) !important;
 }
 
 .text-theme-color2
 {
-	color: rgb(239, 249, 227) !important; /*greenish*/
+	color: rgb(239, 249, 227) !important;
 }
 
 .text-theme-color3
 {
-	color: rgb(64, 66, 64) !important; /*dark*/
+	color: rgb(64, 66, 64) !important;
 }
 
 .text-theme-color4
 {
-	color: rgb(187, 193, 190) !important; /*bluish*/
+	color: rgb(187, 193, 190) !important;
 }
+
+/*--------------------------------------------------
+			header and nav styles
+----------------------------------------------------*/
 
 .banner-text
 {
@@ -114,28 +108,19 @@ a
 	font-size: 1.5rem;
 }
 
-/*navbar overrides*/
-.fixed-nav
+#menuNav .nav-link:hover, #menuNav .nav-link:focus, #menuNav .nav-link.active
 {
-	position: absolute;
-  	top: 0;
-  	right: 0;
-  	left: 0;
-  	z-index: 1030;
-  	padding: 0 3%;
+	color: rgba(239, 249, 227, 0.5) !important;
 }
 
-#menuNav>ul>li>a:hover, #menuNav>ul>li>a:active
-{
-	background-color: rgb(85, 109, 90);
-}
-
-.navbar-dark .navbar-nav .nav-link
+#menuNav .nav-link
 {
 	font-size: 16px;
 }
 
-/*form-control override-set background*/
+/*--------------------------------------------------
+			form-control overrides
+----------------------------------------------------*/
 .form-control
 {
 	background-color: rgb(208, 224, 212);
@@ -147,29 +132,32 @@ a
 	box-shadow: 0 0 0 0.2rem rgba(41, 76, 50, 0.25);
 }
 
-.form-control:focus
+/*--------------------------------------------------
+			button styles
+----------------------------------------------------*/
+.btn-theme-size
 {
-	border-color: #75f4b0;
-	box-shadow: 0 0 0 0.2rem rgba(41, 76, 50, 0.25);
+	width: 100%;
 }
 
-/*override btn-primary color*/
 .btn-theme
 {
 	background-color: rgb(35, 66, 43) !important;
 	border-color: rgb(101, 145, 113) !important;
+	color: rgba(239, 249, 227, 0.5);
 }
 
-.btn-theme:hover
+.btn-theme:hover, .btn-theme:focus
 {
-	background-color: rgb(44, 86, 55) !important;
-	border-color: rgb(101, 145, 113) !important;
+	border-color: #75f4b0;
+	box-shadow: 0 0 0 0.2rem rgba(41, 76, 50, 0.25);
+	color: rgb(239, 249, 227);
 }
 
 /*--------------------------------------------------
 			styles for index page
 ----------------------------------------------------*/
-.banner-index
+.row.banner-index
 {
   background-image: url(../images/banner-index-bg.jpeg);
   background-size: cover;
@@ -177,6 +165,7 @@ a
   background-attachment: fixed;
   background-position: center center;
   min-height: 100vh;
+  position: relative;
 }
 
 .mission-vision
@@ -187,27 +176,22 @@ a
 
 .mission-vision-pos
 {
-	position: absolute;
-	bottom: 0;
+	position: static;
+	margin-top: 50vh;
 }
 
 /*--------------------------------------------------
 			styles for about page
 ----------------------------------------------------*/
-.banner-about
+.story
 {
-  background-image: url(../images/banner-about.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
-  min-height: 650px;
+	padding: 5%;
+	text-align: center;
 }
 
-.about-content
+.founder
 {
-	padding: 0 5%;
-	margin: 2.2%;
+	padding: 2%;
 	text-align: center;
 }
 
@@ -228,18 +212,19 @@ a
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
-  padding: 0;
-}
-
-.join
-{
-	padding: 3% 5%;
-	margin-top: 100px;
+  padding: 3% 5%;
 }
 
 .join-intro
 {
 	text-align: center;
+}
+
+.volunteer-image
+{
+	margin: 10px 10px;
+	width: 250px;
+	height: 200px;
 }
 
 .join-box
@@ -258,11 +243,6 @@ a
 	padding: 3%;
 	border-radius: 2%;
 	background-color: rgba(217, 252, 146, 0.3);
-}
-
-.btn-theme-size
-{
-	width: 100%;
 }
 
 .testimonial
@@ -290,41 +270,79 @@ a
 /*--------------------------------------------------
 			styles for event page
 ----------------------------------------------------*/
-.banner-event
-{
-  background-image: url(../images/banner-event.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
-  min-height: 650px;
-}
-
-.events
-{
-	padding: 5% 2%;
-	position: relative;
-	top: -200px;
-}
-
 .events-container
 {
-	margin-bottom: -200px;
-}
-
-.feature-event
-{
-	border-radius: 50px;
-	background-color: rgb(101, 145, 113);;
-	padding: 2% 2%;
-}
-
-.event
-{
-	margin: 2% 0;
 	text-align: center;
+	padding: 3% 5%;
 }
 
+.card.event
+{
+	padding: 0;
+	margin: 2% auto;
+	width: 18rem;
+	border-color: rgb(101, 145, 113);
+	background-color: rgba(36, 66, 43, 0.2);
+
+}
+
+.card.event:hover
+{
+	position: relative;
+	top: -10px;
+	box-shadow: 0 0 0 0.2rem rgba(41, 76, 50, 0.25);
+}
+
+.card.event .card-img-top
+{
+  	min-height: 200px;
+  	max-height: 200px;
+  	transition: .5s ease;
+  	backface-visibility: hidden;
+  	opacity: 1;
+}
+
+.card.event .card-body
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	transition: .5s ease;
+  	backface-visibility: hidden;
+  	opacity: 1;
+}
+
+.card.event .card-body .card-text
+{
+	margin-top: 40px;
+}
+
+.card.event .card-body a
+{
+	margin-top: 50px;
+}
+
+.card.event .card-overlay 
+{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1.25rem;
+}
+
+.card.event .card-img-top.hide,
+.card.event .card-body.hide
+{
+	opacity: 0;
+}
+
+.card.event .card-overlay.show
+{
+	opacity: 1;
+}
 
 /*--------------------------------------------------
 			styles for donate page
@@ -341,14 +359,49 @@ a
 
 .donate
 {
-	padding: 2% 5% 5%;
+	padding: 5% 5% 5%;
 	margin-top: 50px;
+	text-align: center;
+}
+
+.donate-goes
+{
+	margin: 5px auto;
+	padding: 2%;
+	min-height: 350px;
+	max-height: 350px;
+	background-color: rgba(134, 249, 142, 0.2);
+	border-radius: 2%;
+}
+
+.donate-goes *
+{
+	margin-top: 20px;
+}
+
+.row.donate-type-container
+{
+	margin: 0 -5%;
+}
+
+.donate-type
+{
+	padding: 50px 0;
+	margin: 0;
+	min-height: 300px;
+	max-height: 300px;
+}
+
+.donate-type p
+{
+	margin: 10px;
+	font-size: 15px;
+	text-align: center;
 }
 
 .donate-box
 {
 	text-align: center;
-	margin: 2%;
 	padding: 2%;
 	border-radius: 2%;
 	background-color: rgba(134, 249, 142, 0.2);
@@ -362,15 +415,11 @@ a
 	background-color: rgba(217, 252, 146, 0.3);
 }
 
-.donate-intro
+.donate-form-modal.modal.fade
 {
-	padding: 2%;
-	text-align: center;
-}
-
-.donate-intro div[class*=col]
-{
-	padding: 0;
+	padding-left: 50px !important;
+	background-color: rgba(36, 66, 43,0.9);
+	z-index: 9999;
 }
 
 /*--------------------------------------------------
@@ -430,9 +479,39 @@ a
 	text-align: center;
 }
 
+.social-links a
+{
+	margin: 0 10px;
+}
+
 .footer .input-group-text
 {
 	background-color: rgb(208, 224, 212);
+}
+
+/*--------------------------------------------------
+			back to top button
+----------------------------------------------------*/
+#btn-back-top 
+{
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 30px; 
+    z-index: 9990;
+    border: none;
+    outline: none;
+    background-color: rgba(140, 173, 149, 0.2);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#btn-back-top:hover 
+{
+    background-color: rgba(140, 173, 149, 0.7);
 }
 
 
@@ -440,36 +519,23 @@ a
 /*--------------------------------------------------
 			media queries
 ----------------------------------------------------*/
-/*Small height but large width*/
-@media (min-width: 768px) and (max-height: 800px)
+/*Extra large height devices*/
+@media (min-height: 900px)
 {
 	.mission-vision-pos
 	{
-		 position: relative;
-		 top: 100%;
+		position: absolute;
+		bottom: 0;
+		margin-top: 0;
 	}
 }
 
-
-/*Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) 
+/*Extra small and small devices*/
+@media (max-width: 767.98px) 
 {
-
-	.mission-vision-pos
-	{
-		 position: relative;
-		 top: 100%;
-	}
-
 	#share-us
 	{
 		margin-top: 19px;
-	}
-
-	.about-content
-	{
-		padding: 0;
-		margin: 2% -15px;
 	}
 
 	.donate-box
@@ -480,28 +546,7 @@ a
 	}
 }
 
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767.98px)
-{
-	.mission-vision-pos
-	{
-		 position: relative;
-		 top: 100%;
-	}
-
-	#share-us
-	{
-		margin-top: 19px;
-	}
-	.donate-box
-	{
-		margin-left: -33px;
-		margin-right: -33px;
-		border-radius: 0;
-	}
-}
-
-/*Medium devices (tablets, 768px and up)*/
+/*Medium devices*/
 @media (min-width: 768px) and (max-width: 991.98px) 
 {
 	#share-us
@@ -516,17 +561,25 @@ a
 		font-weight: 300;
 		line-height: 1.2;
 	}
+
 	.logo
 	{
 		font-size: 2.5rem;
 	}
+
+	.donate-type
+	{
+		padding: 50px 20px;
+		min-height: 250px;
+		max-height: 250px;
+	}
 }
 
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199.98px) 
+/*Large and XL devices*/
+@media (min-width: 992px)
 {
 	/*un-fixed top navbar on large and xl screen*/
-	.fixed-nav
+	.fixed-top.fixed-nav
 	{
 		position: relative;
 		padding: 3%;
@@ -537,57 +590,15 @@ a
 		background-color: transparent;
 	}
 
-	#share-us
+	#menuNav .nav-link:hover, #menuNav .nav-link:focus, #menuNav .nav-link.active
 	{
-		position: relative;
-		top: -40%;
+		border-bottom: 1px solid rgb(239, 249, 227);
 	}
 
-	#contact-us
+	.gallery>.carousel>.carousel-inner>.carousel-item>img
 	{
-		border-left: 1px dotted white;
-		border-right: 1px dotted white;
-	}
-
-	.display-md-4
-	{
-		font-size: 3.0rem;
-		font-weight: 300;
-		line-height: 1.2;
-	}
-	.banner-text
-	{
-		text-align: center;
-		margin-top: 100px;
-	}
-	.logo
-	{
-		font-size: 2.75rem;
-	}
-
-	.join
-	{
-		margin-top: 0;
-	}
-
-	.donate
-	{
-		margin-top: 0;
-	}
-}
-
-/*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) 
-{
-	.fixed-nav
-	{
-		position: relative;
-		padding: 3%;
-	}
-
-	.bg-theme-nav
-	{
-		background-color: transparent;
+		width: 75% !important;
+		height: 75% !important;
 	}
 
 	#share-us
@@ -604,26 +615,38 @@ a
 
 	.display-md-4
 	{
-		font-size: 3.5rem;
+		font-size: 3.2rem;
 		font-weight: 300;
 		line-height: 1.2;
 	}
+
 	.banner-text
 	{
 		text-align: center;
 		margin-top: 100px;
 	}
+
 	.logo
 	{
 		font-size: 2.75rem;
 	}
 
-	.join
-	{
-		margin-top: 0;
-	}
 	.donate
 	{
 		margin-top: 0;
+		padding-top: 0;
+	}
+
+	.donate-goes
+	{
+		min-height: 500px;
+		max-height: 500px;
+	}
+
+	.donate-type
+	{
+		padding: 75px 20px;
+		min-height: 350px;
+		max-height: 350px;
 	}
 }
